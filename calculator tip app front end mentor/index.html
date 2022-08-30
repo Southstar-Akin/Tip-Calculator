@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="/main/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="/index.js" async></script>
+</head>
+<body class="grid grid-cols-1 grid-rows-[1fr_2fr_1fr]
+ sm:grid sm:grid-flow-row sm:grid-rows-[0.5fr_2fr_0.5fr] place-content-center h-full w-full m-0 p-0 bg-Lightgrayishcyan">
+ 
+ 
+  <header class="grid place-content-center text-Verydarkcyan">
+    <span class="uppercase tracking-[0.4em] font-bold text-xl">spli<br>tter</span>
+  
+  
+  </header>
+  <main class="grid bg-White mx-[20vw] rounded-3xl shadow-2xl h-[50vh] sm:grid sm:grid-flow-row sm:m-0 sm:h-[100vh] sm:py-12">
+
+
+    <section class="grid grid-cols-2 m-[4%] sm:grid sm:grid-cols-1 sm:grid-flow-row sm:my-0 sm:h-full">
+
+
+  <section class="grid grid-rows-[1fr_2fr_1fr] sm:mx-5 sm:grid sm:grid-flow-row">
+
+    <div class=" grid">
+
+      <form class="grid">
+
+      <label for="bill" class=" text-sm text-Darkgrayishcyan font-semibold grid grid-flow-col">
+       <span>Bill</span>
+       <span id="err"></span>
+        </label>
+
+         <input type="text" name="bill" placeholder="0" id="bill" class=" bg-Verylightgrayishcyan h-[90%]
+          w-[90%] rounded-lg bg-dollar bg-no-repeat bg-[center_left_20px] text-right font-monobold font-thin 
+          text-[18px] text-Verydarkcyan pr-5 focus:outline-none focus:ring-Verydarkcyan focus:ring-2">
+    
+        </form>
+    
+      </div>
+<div class=" grid grid-rows-[2fr_8fr] my-2">
+ <span class=" text-sm text-Darkgrayishcyan font-semibold grid items-end">Select Tip %</span> 
+ <div class="grid-cols-3 grid-rows-2 grid gap-x-4 gap-y-4 my-1" id="bex">
+ <button onclick="bout(butt5)">5%</button> 
+ <button onclick="bout(butt10)">10%</button>
+ <button onclick="bout(butt15)">15%</button>
+ <button onclick="bout(butt25)">25%</button>
+ <button onclick="bout(butt50)">50%</button>
+ <button onclick="bout(custom)">Custom</button>
+ </div>
+</div>
+<div class="grid">
+ 
+  <form class="grid">
+    <label for="persons" class=" text-sm text-Darkgrayishcyan font-semibold grid grid-flow-col">
+     <span> Number of People </span>
+     <span id="err2"></span>
+    </label>
+       
+    <input type="text" name="persons" id="persons" placeholder="0" class=" bg-Verylightgrayishcyan h-[90%]
+    w-[90%] rounded-lg bg-person bg-no-repeat bg-[center_left_20px] text-right font-monobold font-thin 
+    text-[18px] text-Verydarkcyan pr-5 focus:outline-none focus:ring-Verydarkcyan focus:ring-2">
+
+      </form>
+
+    </div>
+</section>
+<section class=" grid m-0 p-0 ml-8 sm:grid sm:m-0 sm:mt-7">
+
+  <div class=" bg-Verydarkcyan rounded-lg grid">
+
+
+    <div class="grid m-8">
+
+    <div class="grid grid-flow-col">
+
+ <span class=" text-White text-sm"> Tip Amount <br> 
+  <span class=" text-Strongcyan text-xs">/ person</span> 
+</span>
+
+ <span class=" text-Strongcyan text-[1.9em] text-right font-bold" id="perperson">$0.00</span>
+
+</div>
+
+<div class="grid grid-flow-col">
+
+ <span class=" text-White text-sm"> Total <br>
+  <span class=" text-Strongcyan text-xs"></span>
+</span>
+
+ <span class=" text-Strongcyan text-[1.9em] text-right font-bold" id="tperperson">$0.00</span>
+
+</div>
+
+<div class="grid items-end justify-items-center m-0 p-0">
+<button class=" bg-Strongcyan hover:bg-Lightgrayishcyan  text-Verydarkcyan 
+rounded-xl text-xl h-[40px] grid w-full place-content-center" id="reset" onclick="rese()">Reset</button>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+</main>
+
+<footer class="m-0 p-0">
+  <div class=" text-center grid place-content-center items-center h-full">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-White underline hover:text-Verydarkcyan">Frontend Mentor</a>
+    Coded by <a href="https://www.twitter.com/akinbiletony" class="text-White underline hover:text-Verydarkcyan">Akinbile Oluwaseyi Tony  </a>
+  </div>
+  </footer
+</body>
+</html>

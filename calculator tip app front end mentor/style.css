@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Mono';
+  src: url('/SpaceMono-Regular.ttf');
+}
+@font-face{
+  font-family: 'MonoBold';
+  src: url('/SpaceMono-Bold.ttf');
+}
+*{
+  @apply font-mono
+}
+div#bex button{
+  @apply bg-Verydarkcyan rounded-md text-White text-[18px] text-center items-center
+  hover:bg-Strongcyan hover:text-Verydarkcyan transition-all last:bg-Verylightgrayishcyan
+  focus:bg-Strongcyan
+}
+div#bex button:last-child{
+  @apply text-Verydarkcyan font-extrabold tracking-wide
+}
+form input::placeholder{
+  @apply text-Grayishcyan
+}
+
+div#bex input{
+@apply text-left pr-2 text-Verydarkcyan
+}
