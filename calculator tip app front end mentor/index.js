@@ -122,7 +122,7 @@ function rese(){
   err.style.color = "red"
 }
  }else{ 
-  if(inp.length === 0){
+  if(inp.length === 0 && newelem.value === ''){
     alert('Please select a percentage')
   }else{
     bill.style.outline = "2px solid hsl(183, 100%, 15%)"
