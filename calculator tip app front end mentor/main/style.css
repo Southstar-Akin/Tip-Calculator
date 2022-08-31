@@ -602,6 +602,26 @@ video {
   height: 40px;
 }
 
+.h-\[650vh\] {
+  height: 650vh;
+}
+
+.h-\[650\] {
+  height: 650;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[50\] {
+  height: 50;
+}
+
 .w-full {
   width: 100%;
 }
@@ -701,11 +721,11 @@ video {
 }
 
 .bg-dollar {
-  background-image: url('/images/icon-dollar.svg');
+  background-image: url('/icon-dollar.svg');
 }
 
 .bg-person {
-  background-image: url('/images/icon-person.svg');
+  background-image: url('/icon-person.svg');
 }
 
 .bg-\[center_left_20px\] {
@@ -936,6 +956,14 @@ div#bex input {
 
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-\[650vh\] {
+    height: 650vh;
+  }
+
+  .sm\:h-\[650px\] {
+    height: 650px;
   }
 
   .sm\:grid-flow-row {

@@ -7,6 +7,8 @@ let perperson = document.querySelector('#perperson')
 let err = document.querySelector('#err')
 let err2 = document.querySelector('#err2')
 const newelem = document.createElement("input")
+let inp = []
+
 
 function newelesty(){
 newelem.style.textAlign = "right"
@@ -64,7 +66,6 @@ let butt10 = {
 
 console.log()
 
-let inp = []
 
 function calc(){
 
@@ -82,10 +83,6 @@ let totalam = function(){
 }
 
 
-function exec(){
-
-}
-
 
 function change(){
   buttons.replaceChild(newelem, buttons.children[5])
@@ -96,42 +93,61 @@ function bout(v){
   let i = v.li
        if(i != 5){
         inp.push(v.ni)
-       }
+        eval()
+      }
        else{
        change()
        newelesty()
        }
 }
 function rese(){
- if(bill.value === '' || persons.value === ''){
-  if(bill.value === '' && persons.value === ''){
+  tperperson.textContent = '$0.00'
+  perperson.textContent = '$0.00'
+  err.textContent = ''
+  err2.textContent = ''
+  bill.value = ''
+  persons.value = ''
+  inp = [""]
+  newelem.value = ""
+}
+
+
+function eval(){
+  tperperson.textContent = `$${calc()}`
+  perperson.textContent = `$${totalam()}`
+}
+
+function exec(){
+  if(bill.value === '' || persons.value === ''){
+  if(bill.value !== '' && persons.value === ''){
+    persons.style.outline = "2px solid red"
+    err2.textContent = "Can't be 0"
+    err2.style.color = "red"
+  }
+  else if(persons.value !== '' && bill.value === ''){
+    bill.style.outline = "2px solid red"
+    err.textContent = "Can't be 0"
+    err.style.color = "red"  
+  }
+  else if(bill.value === '' && persons.value === ''){
     persons.style.outline = "2px solid red"
     bill.style.outline = "2px solid red"
     err.textContent = "Can't be 0"
     err2.textContent = "Can't be 0"
     err.style.color = "red"
     err2.style.color = "red"
-  }
-    else if(persons.value === '' && bill.value !== ''){
-      persons.style.outline = "2px solid red"
-  err2.textContent = "Can't be 0"
-  err2.style.color = "red"
-}else{
-  bill.style.outline = "2px solid red"
-  err.textContent = "Can't be 0"
-  err.style.color = "red"
 }
- }else{ 
+
+}else{
+  bill.style.outline = "2px solid hsl(183, 100%, 15%)"
+  persons.style.outline = "2px solid hsl(183, 100%, 15%)"
+  err.textContent = ''
+  err2.textContent = ''  
   if(inp.length === 0 && newelem.value === ''){
     alert('Please select a percentage')
   }else{
-    bill.style.outline = "2px solid hsl(183, 100%, 15%)"
-    persons.style.outline = "2px solid hsl(183, 100%, 15%)"
-  err.textContent = ''
-  err2.textContent = ''
- tperperson.textContent = `$${calc()}`
- perperson.textContent = `$${totalam()}`
-// console.log(calc())
+    eval()
+  }
 }
 }
-}
+newelem.addEventListener('input', eval)

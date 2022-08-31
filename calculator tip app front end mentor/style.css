@@ -6,13 +6,16 @@
   font-family: 'Mono';
   src: url('/SpaceMono-Regular.ttf');
 }
+
 @font-face{
   font-family: 'MonoBold';
   src: url('/SpaceMono-Bold.ttf');
 }
+
 *{
   @apply font-mono
 }
+
 div#bex button{
   @apply bg-Verydarkcyan rounded-md text-White text-[18px] text-center items-center
   hover:bg-Strongcyan hover:text-Verydarkcyan transition-all last:bg-Verylightgrayishcyan

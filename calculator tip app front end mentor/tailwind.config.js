@@ -30,11 +30,11 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ['Mono'],
-        monobold: ['MonoBold']
+        monobold: ['MonoBold'],
       },
       backgroundImage: {
-        'dollar': "url('/images/icon-dollar.svg')",
-        'person': "url('/images/icon-person.svg')",
+        'dollar': "url('/icon-dollar.svg')",
+        'person': "url('/icon-person.svg')",
       },
     },
   },
