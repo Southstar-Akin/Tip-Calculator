@@ -33,8 +33,8 @@ module.exports = {
         monobold: ['MonoBold'],
       },
       backgroundImage: {
-        'dollar': "url('/icon-dollar.svg')",
-        'person': "url('/icon-person.svg')",
+        'dollar': "url('/images/icon-dollar.svg')",
+        'person': "url('/images/icon-person.svg')",
       },
     },
   },

@@ -4,12 +4,12 @@
 
 @font-face{
   font-family: 'Mono';
-  src: url('/SpaceMono-Regular.ttf');
+  src: url('/Users/mac/Documents/GitHub/Tip-Calculator/calculator tip app front end mentor/SpaceMono-Regular.ttf');
 }
 
 @font-face{
   font-family: 'MonoBold';
-  src: url('/SpaceMono-Bold.ttf');
+  src: url('/Users/mac/Documents/GitHub/Tip-Calculator/calculator tip app front end mentor/SpaceMono-Bold.ttf');
 }
 
 *{
